@@ -6,10 +6,8 @@
 package dao;
 
 import java.util.List;
-import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.transaction.Transactional;
 import model.Pizza;
 
 /**
@@ -44,4 +42,5 @@ public class PizzaManager implements PizzaManagerFacade<Pizza> {
     public List<Pizza> getAllPizzas() {
         return em.createQuery("Select P from Pizza P").getResultList();
     }
+
 }
