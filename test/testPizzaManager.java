@@ -24,16 +24,13 @@ import static org.mockito.Mockito.when;
  *
  * @author GasCan
  */
-public class testPizzaController {
+public class testPizzaManager {
 
-    PizzaController pizzaController;
     PizzaManager pm;
 
     @Before
     public void setUp() {
-        pizzaController = new PizzaController();
         pm = mock(PizzaManager.class);
-        pizzaController.setPm(pm);
         when(pm.getAllPizzas()).thenReturn(new ArrayList<Pizza>());
     }
 
@@ -69,10 +66,4 @@ public class testPizzaController {
         pm.updatePizza(p);
         verify(pm, times(1)).updatePizza(p);
     }
-
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
 }

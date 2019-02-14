@@ -44,7 +44,11 @@ public class testPizza {
         Pizza newPizza = new Pizza();
         pizza.setId(1);
         newPizza.setId(1);
+        
+        Pizza wrongPizza = new Pizza();
+
         assertTrue(newPizza.equals(pizza));
+        assertNotEquals(wrongPizza, pizza);
     }
 
     @Test
