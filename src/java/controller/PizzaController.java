@@ -62,10 +62,6 @@ public class PizzaController {
     }
     
     public String update(){
-        // Dumdumb...
-//        pm.updatePizza(new Pizza(name, price, description));
-        
-        // Corrected (But not working..)
         Pizza p = pm.readPizza(id);
         if (p != null) {
             p.setName(name);

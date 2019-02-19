@@ -13,9 +13,9 @@ import static org.junit.Assert.*;
  *
  * @author GasCan
  */
-public class testPizza {
+public class TestPizza {
 
-    public testPizza() {
+    public TestPizza() {
     }
 
     Pizza pizza;
@@ -23,20 +23,20 @@ public class testPizza {
     @Before
     public void setUp() {
         pizza = new Pizza();
-    }
-
-    @Test
-    public void testGettersAndSetters() {
+        
         pizza.setId(1);
         pizza.setName("testPizza");
         pizza.setPrice(30);
         pizza.setDescription("testPizzaDescription");
+        
+    }
 
+    @Test
+    public void testGettersAndSetters() {
         assertEquals(1, pizza.getId());
         assertEquals("testPizza", pizza.getName());
         assertEquals("testPizzaDescription", pizza.getDescription());
         assertEquals(30, pizza.getPrice(), 0.001);
-
     }
 
     @Test
