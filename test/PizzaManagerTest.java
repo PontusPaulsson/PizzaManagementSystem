@@ -24,7 +24,7 @@ import static org.mockito.Mockito.when;
  *
  * @author GasCan
  */
-public class PizzaMaangerTest {
+public class PizzaManagerTest {
 
     PizzaManager pm;
 

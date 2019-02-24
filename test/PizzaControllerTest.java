@@ -51,7 +51,7 @@ public class PizzaControllerTest {
     
     @Test
     public void testShowAllPizzas(){
-        assertEquals(pc.showAllPizzas(), pc.getAllPizzas());
+        assertEquals(pc.showAllPizzas(), pmm.getAllPizzas());
         assertNotNull(pc.showAllPizzas());
     }
     
