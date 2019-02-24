@@ -13,9 +13,9 @@ import static org.junit.Assert.*;
  *
  * @author GasCan
  */
-public class TestPizza {
+public class PizzaTest {
 
-    public TestPizza() {
+    public PizzaTest() {
     }
 
     Pizza pizza;
@@ -64,7 +64,6 @@ public class TestPizza {
         pizza.setPrice(30);
         pizza.setDescription("testPizzaDescription");
 
-        System.out.println(pizza.toString());
         assertEquals("Pizza{id=1, name=testPizza, price=30.0, description=testPizzaDescription}", pizza.toString());
 
     }
